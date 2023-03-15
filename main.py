@@ -5,6 +5,7 @@ def main():
 
     cur_dir = Path.cwd()
     output_dir = cur_dir / "output"
+    output_dir.mkdir(exist_ok=True)
 
     file_list = list(cur_dir.glob("*.mp4"))
 
