@@ -3,7 +3,7 @@ from subprocess import run
 
 def main():
 
-    cur_dir = Path.cwd()
+    cur_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
     output_dir = cur_dir / "output"
     output_dir.mkdir(exist_ok=True)
 
