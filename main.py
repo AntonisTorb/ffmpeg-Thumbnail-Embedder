@@ -25,6 +25,8 @@ def main():
                 "1",
                 "-map",
                 "0",
+                "-map_metadata",
+                "0",
                 "-c",
                 "copy",
                 "-disposition:0",
