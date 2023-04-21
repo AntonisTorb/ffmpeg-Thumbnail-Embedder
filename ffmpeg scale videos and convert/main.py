@@ -31,7 +31,7 @@ def main():
         else:
             preset_cmd = ""
         
-        command = f"ffmpeg -i {file.name} {scale_cmd} {preset_cmd} {crf_cmd} {output_file}"
+        command = f'ffmpeg -i "{file.name}" {scale_cmd} {preset_cmd} {crf_cmd} "{output_file}"'
         
         print("-"*50)
         print(f"Converting {file.name}...")

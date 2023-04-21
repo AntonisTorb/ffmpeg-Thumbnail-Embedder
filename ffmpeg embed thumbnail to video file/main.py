@@ -15,7 +15,7 @@ def main():
         thumb_file = f"{file.name[:-len(video_format)]}{thumbnail_format}"
         output_file = f"{output_dir.name}\{file.name}"
 
-        command = f"ffmpeg -i {file.name} -i {thumb_file} -map 1 -map 0 -c copy -disposition:0 attached_pic {output_file}"
+        command = f'ffmpeg -i "{file.name}" -i "{thumb_file}" -map 1 -map 0 -c copy -disposition:0 attached_pic "{output_file}"'
         
         # print(command)
         run(command)

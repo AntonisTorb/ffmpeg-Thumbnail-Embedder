@@ -14,7 +14,7 @@ def clip():
     output_dir.mkdir(exist_ok=True)
     output_file = f"{output_dir.name}\{input_file_name}"
 
-    command = f"ffmpeg -ss {start_time} -t {duration} -i {input_file_name} {output_file}"
+    command = f'ffmpeg -ss {start_time} -t {duration} -i "{input_file_name}" "{output_file}"'
 
     # print(command)
     run(command)
